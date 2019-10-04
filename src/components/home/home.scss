@@ -1,0 +1,100 @@
+.loginForm {
+    border-radius: 24px;
+    box-shadow: (200, 250, 300);
+    box-shadow: 0 5px 6px rgba(0,0,0,.26), 0 1px 17px rgba(0,0,0,.13);
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+    background: linear-gradient(to right, #78ffd6, #007991);
+    padding: 60px 40px 40px 40px;
+    @media screen and (max-width: 600px) {
+        border: none;
+        box-shadow: none;
+        background: none;
+        padding: 6%;
+    }
+    .submitBtn {
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 12px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        outline-width: 0px;
+        padding: 6.5px 28px;
+        &:hover {
+            background: #fff;
+            color: #007991;
+            outline-width: 0px;
+        }
+        @media screen and (max-width: 600px) {
+            border-radius: 28px;
+            font-size: 22px;
+            margin-top: 22px;
+            width: 100%;
+            
+        }
+    }
+    .redirectBtn {
+        border: none;
+        background: transparent;
+        color: #fff;
+        display: block;
+        margin: auto;
+        padding: 15px 0px;
+        &:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 18px;
+            padding-top: 34px;
+        }
+    }
+    .input-group-text {
+        border-radius: 6px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #fff;
+        border: none;
+        color: #007991;
+        .fa-lock {
+            font-size: 24px;
+        }
+        @media screen and (max-width: 600px) {
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            border-radius: 0px;
+            color: #fff;
+        }
+    }
+    .input-group-prepend {
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+    .form-group {
+        margin-bottom: 30px;
+    }
+    #EmailInput, #PwdInput {
+        border-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0px;
+        border: none;
+        padding: 22px 12px;
+        &:focus{
+            outline: none;
+        }
+        @media screen and (max-width: 600px) {
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            border-radius: 0px;
+            color: #fff;
+            font-size: 21px;
+            &::placeholder {
+                color: #fff;
+                font-size: 21px;
+            }
+        }
+    }
+    #EmailInput:focus {
+        outline: none;
+    }
+}

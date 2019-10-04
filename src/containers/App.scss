@@ -1,0 +1,39 @@
+.container-fluid {
+    padding: 0px;
+    @media screen and (max-width: 600px) {
+        background: #007991;
+        background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+        background: linear-gradient(to right, #78ffd6, #007991);
+    }
+}
+header {
+    margin: 76px 0px;
+    @media screen and (max-width: 600px) {
+        margin: 65px 0px 60px 0px;
+    }
+}
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 58px;
+}
+header p {
+    font-weight: 600;
+}
+.todo-background {
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+    background: linear-gradient(to right, #78ffd6, #007991);
+    min-height: 700px;
+}
+html, body, #root, .container {
+    @media screen and (max-width: 600px) {
+        height: 96%;
+    }
+}
+.container {
+    @media screen and (max-width: 600px) {
+        background: #007991;
+        background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+        background: linear-gradient(to right, #78ffd6, #007991);
+    }
+}
