@@ -159,7 +159,7 @@ class ToDo extends Component {
                         <Form className="text-center newTaskForm">
                             <Form.Group controlId="title">
                                 <InputGroup>
-                                    <Form.Control type="text" name="title" placeholder="Enter task title" onChange={this.handleModalChange} required />
+                                    <Form.Control type="text" name="title" placeholder="Enter task title" maxlength="30" onChange={this.handleModalChange} required />
                                     <Form.Control.Feedback type="invalid">Please enter title for the task</Form.Control.Feedback>
                                 </InputGroup>
                             </Form.Group>
