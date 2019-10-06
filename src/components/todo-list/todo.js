@@ -63,7 +63,7 @@ class ToDo extends Component {
         fetch(url, { 
             method: 'POST',
             body: JSON.stringify(data),
-            headers:{ 'Content-Type': 'application/json', 'x-access-token': tokk } 
+            headers:{ 'Content-Type': 'application/json', 'x-access-token': tokk }
         }).then(res => res.json()
         ).catch(error => console.error('Error:', error)
         ).then(response => {
