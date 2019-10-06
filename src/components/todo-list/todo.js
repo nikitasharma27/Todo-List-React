@@ -58,11 +58,12 @@ class ToDo extends Component {
 
     addNewTask = () => {
         const url = 'https://engine-staging.viame.ae/assessment/user/task';
+        const tokk = localStorage.getItem("token");
         const data = {todolist: { title: this.state.title, description: this.state.description, status:1 }}
         fetch(url, { 
             method: 'POST',
             body: JSON.stringify(data),
-            headers:{ 'Content-Type': 'application/json', 'x-access-token': 'ca7fe1db6188a235dabc9c1457d82e636b11a543' } 
+            headers:{ 'Content-Type': 'application/json', 'x-access-token': tokk } 
         }).then(res => res.json()
         ).catch(error => console.error('Error:', error)
         ).then(response => {
